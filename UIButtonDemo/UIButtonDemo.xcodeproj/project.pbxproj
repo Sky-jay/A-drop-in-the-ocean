@@ -14,6 +14,28 @@
 		CC616B0A1BEAE67C00386094 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC616B091BEAE67C00386094 /* Images.xcassets */; };
 		CC616B0D1BEAE67C00386094 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC616B0B1BEAE67C00386094 /* LaunchScreen.xib */; };
 		CC616B191BEAE67C00386094 /* UIButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC616B181BEAE67C00386094 /* UIButtonDemoTests.m */; };
+		CC616B321BEAE69B00386094 /* compass-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B231BEAE69B00386094 /* compass-bg.png */; };
+		CC616B331BEAE69B00386094 /* down-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B241BEAE69B00386094 /* down-normal.png */; };
+		CC616B341BEAE69B00386094 /* down-tap.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B251BEAE69B00386094 /* down-tap.png */; };
+		CC616B351BEAE69B00386094 /* left-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B261BEAE69B00386094 /* left-normal.png */; };
+		CC616B361BEAE69B00386094 /* left-tap.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B271BEAE69B00386094 /* left-tap.png */; };
+		CC616B371BEAE69B00386094 /* main-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B281BEAE69B00386094 /* main-bg.png */; };
+		CC616B381BEAE69B00386094 /* powerbut-icon-off.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B291BEAE69B00386094 /* powerbut-icon-off.png */; };
+		CC616B391BEAE69B00386094 /* powerbut-icon-on.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B2A1BEAE69B00386094 /* powerbut-icon-on.png */; };
+		CC616B3A1BEAE69B00386094 /* powerbut-tap.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B2B1BEAE69B00386094 /* powerbut-tap.png */; };
+		CC616B3B1BEAE69B00386094 /* powerbut.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B2C1BEAE69B00386094 /* powerbut.png */; };
+		CC616B3C1BEAE69B00386094 /* right-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B2D1BEAE69B00386094 /* right-normal.png */; };
+		CC616B3D1BEAE69B00386094 /* right-tap.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B2E1BEAE69B00386094 /* right-tap.png */; };
+		CC616B3E1BEAE69B00386094 /* unit_39.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B2F1BEAE69B00386094 /* unit_39.png */; };
+		CC616B3F1BEAE69B00386094 /* up-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B301BEAE69B00386094 /* up-normal.png */; };
+		CC616B401BEAE69B00386094 /* up-tap.png in Resources */ = {isa = PBXBuildFile; fileRef = CC616B311BEAE69B00386094 /* up-tap.png */; };
+		CCDC547B1BEB00300021C083 /* light_24.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDC54781BEB00300021C083 /* light_24.png */; };
+		CCDC547C1BEB00300021C083 /* light_26.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDC54791BEB00300021C083 /* light_26.png */; };
+		CCDC547D1BEB00300021C083 /* mainbut-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDC547A1BEB00300021C083 /* mainbut-bg.png */; };
+		CCDC54801BEB03990021C083 /* power-default-off.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDC547E1BEB03980021C083 /* power-default-off.png */; };
+		CCDC54811BEB03990021C083 /* power-default-on.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDC547F1BEB03990021C083 /* power-default-on.png */; };
+		CCDC54841BEB095A0021C083 /* light_07.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDC54821BEB095A0021C083 /* light_07.png */; };
+		CCDC54851BEB095A0021C083 /* lightOff_07.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDC54831BEB095A0021C083 /* lightOff_07.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +62,28 @@
 		CC616B121BEAE67C00386094 /* UIButtonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIButtonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC616B171BEAE67C00386094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC616B181BEAE67C00386094 /* UIButtonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButtonDemoTests.m; sourceTree = "<group>"; };
+		CC616B231BEAE69B00386094 /* compass-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass-bg.png"; sourceTree = "<group>"; };
+		CC616B241BEAE69B00386094 /* down-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-normal.png"; sourceTree = "<group>"; };
+		CC616B251BEAE69B00386094 /* down-tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-tap.png"; sourceTree = "<group>"; };
+		CC616B261BEAE69B00386094 /* left-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-normal.png"; sourceTree = "<group>"; };
+		CC616B271BEAE69B00386094 /* left-tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-tap.png"; sourceTree = "<group>"; };
+		CC616B281BEAE69B00386094 /* main-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-bg.png"; sourceTree = "<group>"; };
+		CC616B291BEAE69B00386094 /* powerbut-icon-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerbut-icon-off.png"; sourceTree = "<group>"; };
+		CC616B2A1BEAE69B00386094 /* powerbut-icon-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerbut-icon-on.png"; sourceTree = "<group>"; };
+		CC616B2B1BEAE69B00386094 /* powerbut-tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerbut-tap.png"; sourceTree = "<group>"; };
+		CC616B2C1BEAE69B00386094 /* powerbut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerbut.png; sourceTree = "<group>"; };
+		CC616B2D1BEAE69B00386094 /* right-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-normal.png"; sourceTree = "<group>"; };
+		CC616B2E1BEAE69B00386094 /* right-tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-tap.png"; sourceTree = "<group>"; };
+		CC616B2F1BEAE69B00386094 /* unit_39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unit_39.png; sourceTree = "<group>"; };
+		CC616B301BEAE69B00386094 /* up-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-normal.png"; sourceTree = "<group>"; };
+		CC616B311BEAE69B00386094 /* up-tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-tap.png"; sourceTree = "<group>"; };
+		CCDC54781BEB00300021C083 /* light_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_24.png; sourceTree = "<group>"; };
+		CCDC54791BEB00300021C083 /* light_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_26.png; sourceTree = "<group>"; };
+		CCDC547A1BEB00300021C083 /* mainbut-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainbut-bg.png"; sourceTree = "<group>"; };
+		CCDC547E1BEB03980021C083 /* power-default-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "power-default-off.png"; sourceTree = "<group>"; };
+		CCDC547F1BEB03990021C083 /* power-default-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "power-default-on.png"; sourceTree = "<group>"; };
+		CCDC54821BEB095A0021C083 /* light_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_07.png; sourceTree = "<group>"; };
+		CCDC54831BEB095A0021C083 /* lightOff_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightOff_07.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +140,7 @@
 		CC616AFC1BEAE67B00386094 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC616B221BEAE69B00386094 /* 素材 */,
 				CC616AFD1BEAE67C00386094 /* Info.plist */,
 				CC616AFE1BEAE67C00386094 /* main.m */,
 			);
@@ -117,6 +162,35 @@
 				CC616B171BEAE67C00386094 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC616B221BEAE69B00386094 /* 素材 */ = {
+			isa = PBXGroup;
+			children = (
+				CC616B231BEAE69B00386094 /* compass-bg.png */,
+				CCDC54821BEB095A0021C083 /* light_07.png */,
+				CCDC54831BEB095A0021C083 /* lightOff_07.png */,
+				CC616B241BEAE69B00386094 /* down-normal.png */,
+				CC616B251BEAE69B00386094 /* down-tap.png */,
+				CC616B261BEAE69B00386094 /* left-normal.png */,
+				CC616B271BEAE69B00386094 /* left-tap.png */,
+				CC616B281BEAE69B00386094 /* main-bg.png */,
+				CC616B291BEAE69B00386094 /* powerbut-icon-off.png */,
+				CC616B2A1BEAE69B00386094 /* powerbut-icon-on.png */,
+				CC616B2B1BEAE69B00386094 /* powerbut-tap.png */,
+				CC616B2C1BEAE69B00386094 /* powerbut.png */,
+				CC616B2D1BEAE69B00386094 /* right-normal.png */,
+				CC616B2E1BEAE69B00386094 /* right-tap.png */,
+				CC616B2F1BEAE69B00386094 /* unit_39.png */,
+				CC616B301BEAE69B00386094 /* up-normal.png */,
+				CC616B311BEAE69B00386094 /* up-tap.png */,
+				CCDC54781BEB00300021C083 /* light_24.png */,
+				CCDC54791BEB00300021C083 /* light_26.png */,
+				CCDC547A1BEB00300021C083 /* mainbut-bg.png */,
+				CCDC547E1BEB03980021C083 /* power-default-off.png */,
+				CCDC547F1BEB03990021C083 /* power-default-on.png */,
+			);
+			path = "素材";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +273,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC616B381BEAE69B00386094 /* powerbut-icon-off.png in Resources */,
+				CC616B3D1BEAE69B00386094 /* right-tap.png in Resources */,
+				CCDC54811BEB03990021C083 /* power-default-on.png in Resources */,
+				CCDC547C1BEB00300021C083 /* light_26.png in Resources */,
+				CCDC54851BEB095A0021C083 /* lightOff_07.png in Resources */,
+				CC616B3C1BEAE69B00386094 /* right-normal.png in Resources */,
+				CCDC54841BEB095A0021C083 /* light_07.png in Resources */,
+				CC616B3A1BEAE69B00386094 /* powerbut-tap.png in Resources */,
+				CCDC547D1BEB00300021C083 /* mainbut-bg.png in Resources */,
+				CC616B401BEAE69B00386094 /* up-tap.png in Resources */,
 				CC616B081BEAE67C00386094 /* Main.storyboard in Resources */,
+				CC616B321BEAE69B00386094 /* compass-bg.png in Resources */,
+				CC616B351BEAE69B00386094 /* left-normal.png in Resources */,
+				CC616B371BEAE69B00386094 /* main-bg.png in Resources */,
 				CC616B0D1BEAE67C00386094 /* LaunchScreen.xib in Resources */,
+				CCDC547B1BEB00300021C083 /* light_24.png in Resources */,
+				CC616B3E1BEAE69B00386094 /* unit_39.png in Resources */,
+				CC616B3B1BEAE69B00386094 /* powerbut.png in Resources */,
+				CC616B361BEAE69B00386094 /* left-tap.png in Resources */,
+				CC616B341BEAE69B00386094 /* down-tap.png in Resources */,
+				CCDC54801BEB03990021C083 /* power-default-off.png in Resources */,
+				CC616B391BEAE69B00386094 /* powerbut-icon-on.png in Resources */,
 				CC616B0A1BEAE67C00386094 /* Images.xcassets in Resources */,
+				CC616B3F1BEAE69B00386094 /* up-normal.png in Resources */,
+				CC616B331BEAE69B00386094 /* down-normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +376,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -324,6 +421,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -418,6 +516,7 @@
 				CC616B1E1BEAE67C00386094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC616B1F1BEAE67C00386094 /* Build configuration list for PBXNativeTarget "UIButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +525,7 @@
 				CC616B211BEAE67C00386094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
