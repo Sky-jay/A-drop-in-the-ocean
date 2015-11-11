@@ -54,7 +54,7 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:.0];
+    [UIView setAnimationDuration:.2];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     
     CGPoint point = [self getPoint:touches];
