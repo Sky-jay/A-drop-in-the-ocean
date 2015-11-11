@@ -19,9 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addSubview];
+    [self addFirstSubview];
+    [self addSecondSubview];
+    [self addThirdSubview];
 }
-- (void)addSubview
+
+- (void)addFirstSubview
 {
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(120, 120, 135, 40)];
     label.backgroundColor = [UIColor yellowColor];
@@ -32,11 +35,11 @@
     label.font = [UIFont systemFontOfSize:14];
     label.textAlignment = NSTextAlignmentCenter;
     
-//    label.shadowColor = [UIColor blackColor];
-//    label.shadowOffset = CGSizeMake(5, -3);
-
-//    label.highlighted = YES;
-//    label.highlightedTextColor = [UIColor blueColor];
+    //    label.shadowColor = [UIColor blackColor];
+    //    label.shadowOffset = CGSizeMake(5, -3);
+    
+    //    label.highlighted = YES;
+    //    label.highlightedTextColor = [UIColor blueColor];
     
     label.numberOfLines = 1;
     label.adjustsFontSizeToFitWidth = YES;
@@ -49,8 +52,12 @@
      label.lineBreakMode = NSLineBreakByWordWrapping;       以单词为显示单位显示，后面部分省略不显示。
      */
     label.lineBreakMode = NSLineBreakByTruncatingMiddle;
-    [self.view addSubview:label];
     
+    [self.view addSubview:label];
+}
+
+- (void)addSecondSubview
+{
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:@"Colorful Life! Colorful World!"];
     [attributedString setAttributes:@{NSBackgroundColorAttributeName:[UIColor greenColor],NSForegroundColorAttributeName:[UIColor redColor]} range:NSMakeRange(9, 4)];
     [attributedString setAttributes:@{NSBackgroundColorAttributeName:[UIColor yellowColor],NSForegroundColorAttributeName:[UIColor greenColor]} range:NSMakeRange(24, 5)];
@@ -59,22 +66,29 @@
     label2.adjustsFontSizeToFitWidth = YES;
     
     [self.view addSubview:label2];
-    
+}
+
+- (void)addThirdSubview
+{
     UILabel *scrollLabel = [[UILabel alloc]initWithFrame:CGRectMake(120, 360, 135, 135)];
     scrollLabel.text = @"🍂 🍂      🍂🍂🍂  🍂🍂🍂🍂🍂";
     scrollLabel.numberOfLines = 0;
     
-    
     [self.view addSubview:scrollLabel];
-    
-    
+    [self thirdLabelAnimationActionWithLabel:scrollLabel];
+}
+
+- (void)thirdLabelAnimationActionWithLabel:(UILabel *)label
+{
 #if 0
     [UIView animateKeyframesWithDuration:2 delay:0 options:UIViewKeyframeAnimationOptionRepeat|UIViewKeyframeAnimationOptionAutoreverse animations:^{
         
         scrollLabel.frame = CGRectMake(sand, 560, 80, 50);
         
     } completion:^(BOOL finished) {
-        scrollLabel.frame = CGRectMake(sand, 0, 80, 50);
+        
+        label.frame = CGRectMake(sand, 0, 80, 50);
+        
     }];
 #else
     [UIView beginAnimations:@"move" context:nil];
@@ -82,11 +96,12 @@
     [UIView setAnimationCurve:0];
     [UIView setAnimationRepeatAutoreverses:YES];
     [UIView setAnimationRepeatCount:LONG_MAX];
-    scrollLabel.frame = CGRectMake(screenW - 80, 300, 80, 50);
+    
+    label.frame = CGRectMake(screenW - 80, 300, 80, 50);
+    
     [UIView commitAnimations];
     
 #endif
-    
 }
 
 @end
