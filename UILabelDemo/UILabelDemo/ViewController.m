@@ -15,13 +15,15 @@
 @implementation ViewController
 
 #define screenW [UIScreen mainScreen].bounds.size.width
-#define sand random()%320
+#define rand random()%400
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addFirstSubview];
     [self addSecondSubview];
-    [self addThirdSubview];
+//    [self addThirdSubview];
+    //调用落叶效果
+    [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(fallenLeavesAnimationWithLabel) userInfo:nil repeats:YES];
 }
 
 //创建并添加第一个Label
@@ -92,13 +94,14 @@
     //创建scrollLabel并初始化位置和大小
     UILabel *scrollLabel = [[UILabel alloc]initWithFrame:CGRectMake(120, 360, 135, 135)];
     //设置内容
-    scrollLabel.text = @"🍂🍃🍂      🍂🍂🍃🍂  🍂🍂🍂🍃🍂🍂";
+    scrollLabel.text = @"🍂🍃🍂";
     //设置显示行数
     scrollLabel.numberOfLines = 0;
     
     [self.view addSubview:scrollLabel];
     //调用动画效果
-    [self thirdLabelAnimationActionWithLabel:scrollLabel];
+//    [self thirdLabelAnimationActionWithLabel:scrollLabel];
+    
 }
 
 //实现动画效果
@@ -107,7 +110,7 @@
 #if 0
     [UIView animateKeyframesWithDuration:2 delay:0 options:UIViewKeyframeAnimationOptionRepeat|UIViewKeyframeAnimationOptionAutoreverse animations:^{
         
-        scrollLabel.frame = CGRectMake(sand, 560, 80, 50);
+        scrollLabel.frame = CGRectMake(rand, 560, 80, 50);
         
     } completion:^(BOOL finished) {
         
@@ -126,6 +129,22 @@
     [UIView commitAnimations];
     
 #endif
+}
+
+//落叶效果
+- (void)fallenLeavesAnimationWithLabel
+{
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(rand, -135, 135, 135)];
+    //    label.frame = CGRectMake(rand, 360, 135, 135);
+    label.text = @"🍂";
+    label.font = [UIFont systemFontOfSize:12];
+    [self.view addSubview:label];
+    [UIView animateWithDuration:8 animations:^{
+        label.frame = CGRectMake(rand, 667, 135, 135);
+        label.font = [UIFont systemFontOfSize:random()%100];
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 @end
