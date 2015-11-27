@@ -10,5 +10,5 @@
 
 @interface WebVC : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *URLTextField;
-@property (nonatomic, strong) NSString *tempString;
+
 @end

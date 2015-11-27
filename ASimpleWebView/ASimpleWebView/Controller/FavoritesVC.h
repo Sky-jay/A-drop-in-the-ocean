@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FavoritesVC : UIViewController
+@property (nonatomic, strong) NSString *str;
 
 @end
