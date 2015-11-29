@@ -39,4 +39,30 @@
     [_WebView loadRequest:request];
 }
 
+#pragma mark - self.view
+//将要显示self.view
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"===%s===",__func__);
+}
+//已经显示self.view
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"===%s===",__func__);
+}
+//self.view将要消失
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"===%s===",__func__);
+}
+//self.view已经消失
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"===%s===",__func__);
+}
+
 @end
