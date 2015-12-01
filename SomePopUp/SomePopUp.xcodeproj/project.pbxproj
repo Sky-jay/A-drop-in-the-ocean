@@ -17,6 +17,10 @@
 		CC65B63E1C0B3AF600B25212 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CC65B63D1C0B3AF600B25212 /* btn.png */; };
 		CC65B6421C0B3CF700B25212 /* AlertControllerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC65B6401C0B3CF700B25212 /* AlertControllerVC.m */; };
 		CC65B6431C0B3CF700B25212 /* AlertControllerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC65B6411C0B3CF700B25212 /* AlertControllerVC.xib */; };
+		CCD01DE41C0C855A000205D9 /* AlertViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD01DE21C0C855A000205D9 /* AlertViewVC.m */; };
+		CCD01DE51C0C855A000205D9 /* AlertViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD01DE31C0C855A000205D9 /* AlertViewVC.xib */; };
+		CCD01DE91C0C8D98000205D9 /* ActionSheetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD01DE71C0C8D98000205D9 /* ActionSheetVC.m */; };
+		CCD01DEA1C0C8D98000205D9 /* ActionSheetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD01DE81C0C8D98000205D9 /* ActionSheetVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,12 @@
 		CC65B63F1C0B3CF700B25212 /* AlertControllerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertControllerVC.h; sourceTree = "<group>"; };
 		CC65B6401C0B3CF700B25212 /* AlertControllerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertControllerVC.m; sourceTree = "<group>"; };
 		CC65B6411C0B3CF700B25212 /* AlertControllerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertControllerVC.xib; path = ../Controllers/AlertControllerVC.xib; sourceTree = "<group>"; };
+		CCD01DE11C0C855A000205D9 /* AlertViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewVC.h; sourceTree = "<group>"; };
+		CCD01DE21C0C855A000205D9 /* AlertViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewVC.m; sourceTree = "<group>"; };
+		CCD01DE31C0C855A000205D9 /* AlertViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertViewVC.xib; path = ../Controllers/AlertViewVC.xib; sourceTree = "<group>"; };
+		CCD01DE61C0C8D98000205D9 /* ActionSheetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetVC.h; sourceTree = "<group>"; };
+		CCD01DE71C0C8D98000205D9 /* ActionSheetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetVC.m; sourceTree = "<group>"; };
+		CCD01DE81C0C8D98000205D9 /* ActionSheetVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActionSheetVC.xib; path = ../Controllers/ActionSheetVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,10 @@
 				CC65B61A1C0B3A5F00B25212 /* ViewController.m */,
 				CC65B63F1C0B3CF700B25212 /* AlertControllerVC.h */,
 				CC65B6401C0B3CF700B25212 /* AlertControllerVC.m */,
+				CCD01DE11C0C855A000205D9 /* AlertViewVC.h */,
+				CCD01DE21C0C855A000205D9 /* AlertViewVC.m */,
+				CCD01DE61C0C8D98000205D9 /* ActionSheetVC.h */,
+				CCD01DE71C0C8D98000205D9 /* ActionSheetVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +164,8 @@
 			children = (
 				CC65B61C1C0B3A5F00B25212 /* Main.storyboard */,
 				CC65B6411C0B3CF700B25212 /* AlertControllerVC.xib */,
+				CCD01DE31C0C855A000205D9 /* AlertViewVC.xib */,
+				CCD01DE81C0C8D98000205D9 /* ActionSheetVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,8 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD01DEA1C0C8D98000205D9 /* ActionSheetVC.xib in Resources */,
 				CC65B61E1C0B3A5F00B25212 /* Main.storyboard in Resources */,
 				CC65B6231C0B3A5F00B25212 /* LaunchScreen.xib in Resources */,
+				CCD01DE51C0C855A000205D9 /* AlertViewVC.xib in Resources */,
 				CC65B6201C0B3A5F00B25212 /* Images.xcassets in Resources */,
 				CC65B6431C0B3CF700B25212 /* AlertControllerVC.xib in Resources */,
 				CC65B63E1C0B3AF600B25212 /* btn.png in Resources */,
@@ -256,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD01DE41C0C855A000205D9 /* AlertViewVC.m in Sources */,
 				CC65B61B1C0B3A5F00B25212 /* ViewController.m in Sources */,
+				CCD01DE91C0C8D98000205D9 /* ActionSheetVC.m in Sources */,
 				CC65B6181C0B3A5F00B25212 /* AppDelegate.m in Sources */,
 				CC65B6151C0B3A5F00B25212 /* main.m in Sources */,
 				CC65B6421C0B3CF700B25212 /* AlertControllerVC.m in Sources */,

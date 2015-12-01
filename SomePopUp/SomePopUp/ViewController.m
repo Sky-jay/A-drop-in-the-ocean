@@ -17,7 +17,7 @@
 static NSString *identifier = @"cell";
 
 - (void)viewDidLoad {
-    _VCs = @[@"AlertControllerVC"];
+    _VCs = @[@"AlertControllerVC", @"AlertViewVC", @"ActionSheetVC"];
     [super viewDidLoad];
     self.tableView.rowHeight = 100;
 }
