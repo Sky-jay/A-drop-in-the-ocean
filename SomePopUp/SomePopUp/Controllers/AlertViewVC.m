@@ -16,6 +16,7 @@ typedef enum{
 }AlertViewStyle;
 
 @interface AlertViewVC ()<UIAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
 @end
 
@@ -23,7 +24,8 @@ typedef enum{
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //ActivityIndicatorView当动画停止的时候隐藏
+    _activityIndicatorView.hidesWhenStopped = YES;
 }
 - (IBAction)alertViewAction:(UIButton *)sender {
     switch (sender.tag) {
@@ -60,11 +62,16 @@ typedef enum{
     NSLog(@"===buttonTitle>>%@===",buttonTitle);
     //显示alertView
     [alertView show];
+    
+    //ActivityIndicatorView动画开始
+    [_activityIndicatorView startAnimating];
 }
 
 #pragma mark - UIAlertViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+    //ActivityIndicatorView停止动画
+    [_activityIndicatorView stopAnimating];
     switch (buttonIndex) {
         case 0:
             NSLog(@"===Cancel!===");
