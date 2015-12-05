@@ -73,6 +73,20 @@
     return scaledImage;     //返回已经更改过大小的图片
 }
 
+#pragma mark - UITextViewDelegate
+
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    UIBarButtonItem *editButton = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(finishAction:)];
+    self.navigationItem.rightBarButtonItem = editButton;
+}
+
+- (void)finishAction:(UIBarButtonItem *)btn
+{
+    [_textView resignFirstResponder];
+    self.navigationItem.rightBarButtonItem = nil;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
