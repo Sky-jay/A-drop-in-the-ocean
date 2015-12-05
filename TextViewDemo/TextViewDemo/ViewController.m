@@ -50,13 +50,27 @@
     //添加图片
     //文本附着图片
     NSTextAttachment *attachment = [[NSTextAttachment alloc]init];
-    attachment.image = [UIImage imageNamed:@"假如生活欺骗了你.jpg"];
+    //取到图片
+    UIImage *image = [UIImage imageNamed:@"假如生活欺骗了你.jpg"];
+    //更改图片大小
+    UIImage *scaledImage = [self originImage:image scaleToSize:CGSizeMake(365, 250)];
+    attachment.image = scaledImage;
     NSAttributedString *attachStr = [NSAttributedString attributedStringWithAttachment:attachment];
     //把图片属性字符串追加到attributedStr后面
     [attributedStr appendAttributedString:attachStr];
     //将属性文本赋值给TextView的属性文本
     _textView.attributedText = attributedStr;
     
+}
+
+//重绘图片大小属性
+- (UIImage *)originImage:(UIImage *)image scaleToSize:(CGSize)size
+{
+    UIGraphicsBeginImageContext(size);  //size为要得到的图片大小
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return scaledImage;     //返回已经更改过大小的图片
 }
 
 - (void)didReceiveMemoryWarning {
