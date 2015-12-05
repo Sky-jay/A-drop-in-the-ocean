@@ -18,11 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addSubViews];
+    
+    //注册通知（键盘的弹出以及返回）
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardHandle:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardHandle:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 - (void)addSubViews
 {
-    _textView.backgroundColor = [UIColor grayColor];
+    _textView.backgroundColor = [UIColor greenColor];
     //设置TextView的代理
     _textView.delegate = self;
     [self configTextView];
@@ -90,6 +94,31 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - NSNotificationCenter
+
+- (void)keyBoardHandle:(NSNotification *)notification
+{
+    NSLog(@"%@",NSStringFromCGRect(_textView.frame));
+    CGRect beginFrame = [notification.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGRect endFrame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGFloat detalY = endFrame.origin.y - beginFrame.origin.y;
+    CGRect textViewFrame = _textView.frame;
+    textViewFrame.size.height += detalY;
+    
+    CGFloat duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    [UIView animateWithDuration:duration animations:^{
+        _textView.frame = textViewFrame;
+    }];
+    NSLog(@"%@",NSStringFromCGRect(_textView.frame));
+}
+
+- (void)dealloc
+{
+    //移除通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
 @end

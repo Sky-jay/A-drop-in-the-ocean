@@ -28,7 +28,7 @@
 现在却常是忧郁。
 一切都是瞬息，一切都将会过去；
 而那过去了的，就会成为亲切的怀恋。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
