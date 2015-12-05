@@ -100,7 +100,7 @@
 
 - (void)keyBoardHandle:(NSNotification *)notification
 {
-    NSLog(@"%@",NSStringFromCGRect(_textView.frame));
+//    NSLog(@"%@",NSStringFromCGRect(_textView.frame));
     CGRect beginFrame = [notification.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
     CGRect endFrame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGFloat detalY = endFrame.origin.y - beginFrame.origin.y;
@@ -111,7 +111,7 @@
     [UIView animateWithDuration:duration animations:^{
         _textView.frame = textViewFrame;
     }];
-    NSLog(@"%@",NSStringFromCGRect(_textView.frame));
+//    NSLog(@"%@",NSStringFromCGRect(_textView.frame));
 }
 
 - (void)dealloc
