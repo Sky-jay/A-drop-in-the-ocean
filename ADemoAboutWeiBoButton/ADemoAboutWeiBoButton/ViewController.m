@@ -13,6 +13,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *btns;
+
 @end
 
 @implementation ViewController
@@ -40,7 +41,7 @@ static BOOL isShow = NO;
     CGFloat btnH = 71.f;
     CGFloat XMargin = (kScreenW - 3 * btnW) / 4;
     CGFloat YMargin = 32;
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < btnImages.count; i++) {
         int row = i / 3;
         int column = i % 3;
         CGFloat btnX = XMargin + (btnW + XMargin) * column;
@@ -56,15 +57,13 @@ static BOOL isShow = NO;
 - (void)showBtnsWithAnimation:(BOOL)isOrNo
 {
     if (isOrNo) {
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < _btns.count; i++) {
             UIButton *btn = _btns[i];
             [UIView animateWithDuration:0.8 delay:i * 0.03 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 CGPoint temp = btn.center;
                 temp.y -= 500;
                 btn.center = temp;
-            } completion:^(BOOL finished) {
-                
-            }];
+            } completion:nil];
         }
     }else{
         for (int i = 0; i < 6; i++) {
@@ -79,7 +78,24 @@ static BOOL isShow = NO;
 
 - (void)hiddenBtnsWithAnimation:(BOOL)isOrNo
 {
-    
+    if (isOrNo) {
+        for (int i = 0; i < _btns.count; i++) {
+            UIButton *btn = _btns[_btns.count - 1 - i];
+            [UIView animateWithDuration:0.8 delay:i * 0.03 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                CGPoint temp = btn.center;
+                temp.y += 500;
+                btn.center = temp;
+            } completion:nil];
+        }
+    }else{
+        for (int i = 0; i < 6; i++) {
+            UIButton *btn = _btns[i];
+            CGPoint temp = btn.center;
+            temp.y += 500;
+            btn.center = temp;
+        }
+    }
+    isShow = NO;
 }
 
 @end
